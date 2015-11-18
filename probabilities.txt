@@ -1,0 +1,29 @@
+probabilities
+
+S = Sample Space
+E = Event Space
+p:E-->[0,1] prob. function
+E(=p(s)
+
+Exercise
+You are testing a psychic who claims to predict coin flips
+Let F = Person is actually psychic
+	E = Person Perfectly predicts 10 coin flips
+
+	Prior p(F)
+	Posterior p(F|E)
+
+	Question: if p(F|E)>0.5, how big is p(F)?
+
+	p(F|E) = p(E|F)*p(F)/p(E)>0.5
+	p(F)>0.5*p(E)/p(E/F)
+	p(E/F) = 1 because if he is a physican, he can do E
+	p(F) = 0.5p(E)
+	p(E) != (1/2)^10
+	p(E) = p(E|F)p(F)+p(E|-F)p(-F)
+	p(-F) = 1-p(F)
+	p(E|-F) = (1/2)^10
+	solve the equation, p(F) = 1/1025
+
+Bayesian Networks
+A Bayesian Net is a DAG that encodes a joint porb dists(A-B-C A-B-D-C)
